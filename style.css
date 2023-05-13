@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400 !important;0,500 !important;0,700 !important;1,400 !important;1,500 !important;1,700&display=swap");
+
 body {
   background-color: var(--main-bg) !important;
   margin: 0;
@@ -69,6 +71,64 @@ body {
 
 
 
+.first-section h2 {
+  color: var(--section1-h2) !important;
+}
+
+.first-section {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.first-section h2 span {
+  background: -webkit-linear-gradient(
+    90deg,
+    var(--gra-up) 0%,
+    var(--gra-down) 100%
+  ) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  max-width: max-content !important;
+}
+
+.first-section h3 {
+  color: var(--section1-h3) !important;
+}
+
+.first-section button {
+  background: rgb(190, 32, 72) !important;
+  background: linear-gradient(
+    90deg,
+    var(--gra-up) 30%,
+    var(--gra-down) 100%
+  ) !important;
+  border-radius: 99px !important;
+  box-shadow: var(--gra-down) 0 5px 30px -5px !important;
+  box-sizing: border-box !important;
+  color: #ffffff !important;
+  cursor: pointer !important;
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  margin-top: 25px !important;
+  line-height: 24px !important;
+  opacity: 1 !important;
+  outline: 0 solid transparent !important;
+  padding: 10px 20px !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  touch-action: manipulation !important;
+  width: fit-content !important;
+  word-break: break-word !important;
+  border: 0 !important;
+}
+
+.headerImage {
+  position: relative !important;
+  animation: animate 2s alternate infinite !important;
+}
+
+
+
 @media only screen and (min-width: 600px) {
   /* For Tablets   */
 }
@@ -105,7 +165,36 @@ body {
     right: 0 !important;
   }
 
+  .first-section {
+    padding: 30px 5px !important;
+    text-align: center !important;
+    margin: 20px 0px !important;
+  }
+
+  .first-section h2 {
+    font-weight: 600 !important;
+    font-size: 38px !important;
+  }
+
+  .first-section h3 {
+    font-weight: normal !important;
+    margin: 0px 0px !important;
+  }
+
+  .headerImage {
+    width: 100% !important;
+    margin-top: 30px !important;
+  }
   
+}
+
+@keyframes animate {
+  from{
+    bottom: 0;
+  }
+  to{
+    bottom: 20px;
+  }
 }
 
 :root {
