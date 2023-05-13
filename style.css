@@ -2,8 +2,8 @@
 
 body {
   background-color: var(--main-bg) !important;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .nav-bar {
@@ -12,7 +12,7 @@ body {
   align-items: center !important;
   list-style: none !important;
   position: relative !important;
-  background-color: var(--color2) !important;
+  color: var(--navbar-text);
   padding: 12px 20px !important;
 }
 
@@ -107,13 +107,10 @@ body {
   color: #ffffff !important;
   cursor: pointer !important;
   font-family: "DM Sans", sans-serif !important;
-  font-size: 16px !important;
-  font-weight: 700 !important;
   margin-top: 25px !important;
   line-height: 24px !important;
   opacity: 1 !important;
   outline: 0 solid transparent !important;
-  padding: 10px 20px !important;
   user-select: none !important;
   -webkit-user-select: none !important;
   touch-action: manipulation !important;
@@ -128,13 +125,163 @@ body {
 }
 
 
-
-@media only screen and (min-width: 600px) {
-  /* For Tablets   */
+.second-section {
+  background: rgb(190, 32, 72) !important;
+  background: linear-gradient(
+    90deg,
+    var(--gra-up),
+    var(--gra-down)
+  ) !important;
+  box-shadow: var(--drop-shadow) 10px 10px 0px -2px !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  border-radius: 1.2rem !important;
 }
+
+.btn-design {
+  background: rgb(190, 32, 72) !important;
+  background: linear-gradient(
+    90deg,
+    var(--gra-up) 30%,
+    var(--gra-down) 100%
+  ) !important;
+  border-radius: 99px !important;
+  box-shadow: var(--gra-down) 0 5px 30px -5px !important;
+  box-sizing: border-box !important;
+  color: #ffffff !important;
+  cursor: pointer !important;
+  font-family: "DM Sans", sans-serif !important;
+  line-height: 24px !important;
+  opacity: 1 !important;
+  outline: 0 solid transparent !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  touch-action: manipulation !important;
+  width: fit-content !important;
+  word-break: break-word !important;
+  border: 0 !important;
+}
+
+.journey-title{
+  font-family: "DM Sans", sans-serif !important;
+  text-align: center !important;
+  font-weight: bolder !important;
+  color: var(--text-white) !important;
+}
+
+.journey-list {
+  color: var(--text-white) !important;
+  font-family: "DM Sans", sans-serif !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-direction: row !important;
+}
+
+.journey-items {
+  text-align: center !important;
+}
+
+.border-right {
+  border-right: 1px solid black !important;
+}
+
 
 @media only screen and (min-width: 760px) {
   /* For Desktop */
+
+  .menu {
+    margin-right: 10% !important;
+    line-height: 100px;
+  }
+
+  .logo {
+    margin: 0% 10% !important;
+  }
+
+  .menu li {
+  }
+
+  .menu li a {
+    color: var(--navbar-text) !important;
+  }
+
+  .btn-design {
+    font-size: 16px !important;
+    padding: 8px 28px !important;
+    font-weight: 500 !important;
+  }
+
+  .first-section {
+    text-align: left !important;
+    margin: 8% 10% !important;
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  .first-section h2 {
+    font-weight: 700 !important;
+    font-size: 54px !important;
+  }
+
+  .first-section h3 {
+    font-weight: 200 !important;
+    font-size: 22px;
+    margin: 0px 0px !important;
+  }
+
+  .headerText {
+    width: 50% !important;
+  }
+
+  .headerImage-div {
+    width: 50% !important;
+    margin: 0px 0px 0px 0px !important;
+  }
+
+  .headerImage {
+    width: 75% !important;
+    float: right !important;
+  }
+
+  .first-section button {
+    font-size: 20px !important;
+    padding: 18px 36px !important;
+    font-weight: 600 !important;
+  }
+
+  .second-section {
+    padding: 3% 5% !important;
+    margin: 13% 20% !important;
+  }
+  
+  .journey-title{
+    font-size: 38px !important;
+  }
+  
+  .journey-title p {
+    margin: 0px 0px 20px 0px !important;
+    padding: 0 !important;
+  }
+  
+  .journey-list {
+    margin: 0px 30px !important;
+    top: 0 !important;
+  }
+  
+  .journey-items h4 {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    margin: 5px 0px !important;
+    padding: 0 !important;
+  }
+  
+  .journey-items p {
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
 }
 
 @media only screen and (max-width: 759px) {
@@ -185,6 +332,46 @@ body {
     width: 100% !important;
     margin-top: 30px !important;
   }
+
+  .first-section button {
+    font-size: 20px !important;
+    padding: 10px 25px !important;
+    font-weight: 600 !important;
+  }
+
+  .second-section {
+    padding: 40px 0px !important;
+    margin: 50px 0px !important;
+  }
+  
+  .journey-title{
+    font-size: 26px !important;
+  }
+  
+  .journey-title p {
+    margin: 0px 0px 20px 0px !important;
+    padding: 0 !important;
+  }
+  
+  .journey-list {
+    margin: 0px 30px !important;
+    top: 0 !important;
+  }
+  
+  .journey-items h4 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin: 5px 0px !important;
+    padding: 0 !important;
+  }
+  
+  .journey-items p {
+    font-weight: 400 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  
   
 }
 
@@ -202,9 +389,11 @@ body {
   --menu-bg: #ff2e63 !important;
   --section1-h2: #ffffff !important;
   --section1-h3: #ffffff !important;
+  --navbar-text: #ffffff !important;
 
   --gra-up: rgb(190, 32, 72, 1) !important;
   --gra-down: rgba(255, 46, 99, 1) !important;
+  --drop-shadow: #cb1744 !important;
 
   --text-white: #eaeaea !important;
 
