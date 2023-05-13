@@ -1,0 +1,127 @@
+body {
+  background-color: var(--main-bg) !important;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  list-style: none !important;
+  position: relative !important;
+  background-color: var(--color2) !important;
+  padding: 12px 20px !important;
+}
+
+.logo img {
+  width: 180px !important;
+}
+.menu {
+  display: flex !important;
+}
+.menu li {
+  padding-left: 30px !important;
+}
+.menu li a {
+  display: inline-block !important;
+  text-decoration: none !important;
+  color: var(--black) !important;
+  text-align: center !important;
+  font-family: "DM Sans", sans-serif !important;
+  transition: 0.15s ease-in-out !important;
+  position: relative !important;
+}
+
+.menu li a::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 1px !important;
+  background-color: var(--light-white) !important;
+  transition: 0.15s ease-in-out !important;
+}
+.menu li a:hover:after {
+  width: 100% !important;
+}
+.open-menu,
+.close-menu {
+  position: absolute !important;
+  color: var(--light-white) !important;
+  cursor: pointer !important;
+  font-size: 1.5rem !important;
+  display: none !important;
+}
+.open-menu {
+  top: 50% !important;
+  right: 20px !important;
+  transform: translateY(-50%) !important;
+}
+.close-menu {
+  top: 20px !important;
+  right: 20px !important;
+}
+#check {
+  display: none !important;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  /* For Tablets   */
+}
+
+@media only screen and (min-width: 760px) {
+  /* For Desktop */
+}
+
+@media only screen and (max-width: 759px) {
+  /* For Phone */
+  .menu {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 80% !important;
+    height: 100vh !important;
+    position: fixed !important;
+    top: 0px !important;
+    right: -100% !important;
+    z-index: 100 !important;
+    background-color: var(--menu-bg) !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  .menu li {
+    margin-top: 40px !important;
+  }
+  .menu li a {
+    padding: 10px !important;
+  }
+  .open-menu,
+  .close-menu {
+    display: block !important;
+  }
+  #check:checked ~ .menu {
+    right: 0 !important;
+  }
+
+  
+}
+
+:root {
+  --main-bg: #000000 !important;
+  --menu-bg: #ff2e63 !important;
+  --section1-h2: #ffffff !important;
+  --section1-h3: #ffffff !important;
+
+  --gra-up: rgb(190, 32, 72, 1) !important;
+  --gra-down: rgba(255, 46, 99, 1) !important;
+
+  --text-white: #eaeaea !important;
+
+  --black: #252a34 !important;
+  --light-green: #08d9d6 !important;
+  --pink: rgb(190, 32, 72) !important;
+  --light-white: #eaeaea !important;
+  --dark-blue: #1e0738 !important;
+}
