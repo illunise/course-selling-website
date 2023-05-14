@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400 !important;0,500 !important;0,700 !important;1,400 !important;1,500 !important;1,700&display=swap");
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--main-bg) !important;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+a {
+  text-decoration: none;
 }
 
 .nav-bar {
@@ -185,20 +193,94 @@ body {
   border-right: 1px solid black !important;
 }
 
+.third-section {
+  padding: 5% 10% !important;
+  background-color: var(--course-bg) !important;
+}
 
-@media only screen and (min-width: 760px) {
+.third-section-title {
+  text-align: center !important;
+  font-family: "DM Sans", sans-serif !important;
+  color: var(--text-white) !important;
+  margin-bottom: 4% !important;
+}
+
+.third-section-title span {
+  color: var(--text-red) !important;
+}
+
+.card {
+  transition: box-shadow .6s;
+  margin: auto !important;
+  padding: 1.25rem !important;
+  border-radius: 0.5rem !important;
+  border: 0.1px solid var(--course-border);
+  border-width: 1px !important;
+  --tw-border-opacity: 1;
+  border-color: rgb(53 58 60/var(--tw-border-opacity));
+}
+
+.card:hover {
+  box-shadow: 0 0 5px var(--card-shadow); 
+}
+
+.course-thumbnail {
+  width: 100% !important;
+  border-radius: 5px !important;
+}
+
+.course-title {
+  font-family: "DM Sans", sans-serif !important;
+  color: var(--text-white) !important;
+  font-size: 1.5rem;
+}
+
+.line {
+  border-bottom: 1px solid var(--line-color) !important;
+  width: 70% !important;
+  opacity: .2;
+}
+
+.course-price-section {
+  display: flex;
+  flex-direction: row;
+  color: var(--text-white);
+  font-family: "DM Sans", sans-serif !important;
+  font-weight: 700;
+}
+
+.final-price {
+  margin-left: 5px;
+  font-size: 1rem;
+  color: var(--text-white);
+}
+
+
+.prev-price {
+  margin-left: 15px;
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: var(--text-red);
+}
+
+.discount-percent {
+  background-color: var(--dicount-bg);
+  font-size: .875rem;
+  border-radius: 0.375rem;
+  padding: 3px 7px;
+  margin-left: 15px;
+}
+
+@media only screen and (min-width: 769px) {
   /* For Desktop */
 
   .menu {
     margin-right: 10% !important;
-    line-height: 100px;
+    line-height: 100px !important;
   }
 
   .logo {
     margin: 0% 10% !important;
-  }
-
-  .menu li {
   }
 
   .menu li a {
@@ -281,10 +363,18 @@ body {
     margin: 0 !important;
     padding: 0 !important;
   }
+
+  .third-section-title {
+    font-size: 42px !important;
+  }
+
+  .card {
+    max-width: 350px !important;
+  }
   
 }
 
-@media only screen and (max-width: 759px) {
+@media only screen and (max-width: 768px) {
   /* For Phone */
   .menu {
     flex-direction: column !important;
@@ -304,6 +394,13 @@ body {
   .menu li a {
     padding: 10px !important;
   }
+
+  .btn-design {
+    font-size: 16px !important;
+    padding: 8px 28px !important;
+    font-weight: 500 !important;
+  }
+  
   .open-menu,
   .close-menu {
     display: block !important;
@@ -370,8 +467,14 @@ body {
     margin: 0 !important;
     padding: 0 !important;
   }
+
+  .third-section-title {
+    font-size: 24px !important;
+  }
   
-  
+  .card {
+    width: 90% !important;
+  }
   
 }
 
@@ -385,7 +488,7 @@ body {
 }
 
 :root {
-  --main-bg: #000000 !important;
+  --main-bg: #141517 !important;
   --menu-bg: #ff2e63 !important;
   --section1-h2: #ffffff !important;
   --section1-h3: #ffffff !important;
@@ -395,7 +498,21 @@ body {
   --gra-down: rgba(255, 46, 99, 1) !important;
   --drop-shadow: #cb1744 !important;
 
+
   --text-white: #eaeaea !important;
+  --text-red: rgba(255, 46, 99, 1) !important;
+
+
+  /* Card */
+  --line-color: #bfbfbf !important;
+  --course-bg: rgb(27 29 30) !important;
+  --course-border: #939393 !important;
+  --dicount-bg: rgb(29 209 161) !important;
+  --card-shadow: rgba(255, 46, 99, 1) !important;
+
+
+
+
 
   --black: #252a34 !important;
   --light-green: #08d9d6 !important;
