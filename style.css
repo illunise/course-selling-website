@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400 !important;0,500 !important;0,700 !important;1,400 !important;1,500 !important;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
 * {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--main-bg) !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  background-color: var(--main-bg);
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -15,76 +15,74 @@ a {
 }
 
 .nav-bar {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  list-style: none !important;
-  position: relative !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
   color: var(--navbar-text);
-  padding: 12px 20px !important;
+  padding: 12px 20px;
 }
 
 .logo img {
-  width: 180px !important;
+  width: 180px;
 }
 .menu {
-  display: flex !important;
+  display: flex;
 }
 .menu li {
-  padding-left: 30px !important;
+  padding-left: 30px;
 }
 .menu li a {
-  display: inline-block !important;
-  text-decoration: none !important;
-  color: var(--black) !important;
-  text-align: center !important;
-  font-family: "DM Sans", sans-serif !important;
-  transition: 0.15s ease-in-out !important;
-  position: relative !important;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--black);
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  transition: 0.15s ease-in-out;
+  position: relative;
 }
 
 .menu li a::after {
-  content: "" !important;
-  position: absolute !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  width: 0 !important;
-  height: 1px !important;
-  background-color: var(--light-white) !important;
-  transition: 0.15s ease-in-out !important;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--light-white);
+  transition: 0.15s ease-in-out;
 }
 .menu li a:hover:after {
-  width: 100% !important;
+  width: 100%;
 }
 .open-menu,
 .close-menu {
-  position: absolute !important;
-  color: var(--light-white) !important;
-  cursor: pointer !important;
-  font-size: 1.5rem !important;
-  display: none !important;
+  position: absolute;
+  color: var(--light-white);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
 }
 .open-menu {
-  top: 50% !important;
-  right: 20px !important;
-  transform: translateY(-50%) !important;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 .close-menu {
-  top: 20px !important;
-  right: 20px !important;
+  top: 20px;
+  right: 20px;
 }
 #check {
-  display: none !important;
+  display: none;
 }
 
-
-
 .first-section h2 {
-  color: var(--section1-h2) !important;
+  color: var(--section1-h2);
 }
 
 .first-section {
-  font-family: "DM Sans", sans-serif !important;
+  font-family: "DM Sans", sans-serif;
 }
 
 .first-section h2 span {
@@ -92,141 +90,136 @@ a {
     90deg,
     var(--gra-up) 0%,
     var(--gra-down) 100%
-  ) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  max-width: max-content !important;
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: max-content;
 }
 
 .first-section h3 {
-  color: var(--section1-h3) !important;
+  color: var(--section1-h3);
 }
 
-.first-section button {
-  background: rgb(190, 32, 72) !important;
+.first-section a {
+  background: rgb(190, 32, 72);
   background: linear-gradient(
     90deg,
     var(--gra-up) 30%,
     var(--gra-down) 100%
-  ) !important;
-  border-radius: 99px !important;
-  box-shadow: var(--gra-down) 0 5px 30px -5px !important;
-  box-sizing: border-box !important;
-  color: #ffffff !important;
-  cursor: pointer !important;
-  font-family: "DM Sans", sans-serif !important;
-  margin-top: 25px !important;
-  line-height: 24px !important;
-  opacity: 1 !important;
-  outline: 0 solid transparent !important;
-  user-select: none !important;
-  -webkit-user-select: none !important;
-  touch-action: manipulation !important;
-  width: fit-content !important;
-  word-break: break-word !important;
-  border: 0 !important;
+  );
+  border-radius: 99px;
+  box-shadow: var(--gra-down) 0 5px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 25px;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
 }
 
 .headerImage {
-  position: relative !important;
-  animation: animate 2s alternate infinite !important;
+  position: relative;
+  animation: animate 2s alternate infinite;
 }
 
-
 .second-section {
-  background: rgb(190, 32, 72) !important;
-  background: linear-gradient(
-    90deg,
-    var(--gra-up),
-    var(--gra-down)
-  ) !important;
-  box-shadow: var(--drop-shadow) 10px 10px 0px -2px !important;
-  box-sizing: border-box !important;
-  position: relative !important;
-  border-radius: 1.2rem !important;
+  background: rgb(190, 32, 72);
+  background: linear-gradient(90deg, var(--gra-up), var(--gra-down));
+  box-shadow: var(--drop-shadow) 10px 10px 0px -2px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 1.2rem;
 }
 
 .btn-design {
-  background: rgb(190, 32, 72) !important;
+  background: rgb(190, 32, 72);
   background: linear-gradient(
     90deg,
     var(--gra-up) 30%,
     var(--gra-down) 100%
-  ) !important;
-  border-radius: 99px !important;
-  box-shadow: var(--gra-down) 0 5px 30px -5px !important;
-  box-sizing: border-box !important;
-  color: #ffffff !important;
-  cursor: pointer !important;
-  font-family: "DM Sans", sans-serif !important;
-  line-height: 24px !important;
-  opacity: 1 !important;
-  outline: 0 solid transparent !important;
-  user-select: none !important;
-  -webkit-user-select: none !important;
-  touch-action: manipulation !important;
-  width: fit-content !important;
-  word-break: break-word !important;
-  border: 0 !important;
+  );
+  border-radius: 99px;
+  box-shadow: var(--gra-down) 0 5px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
 }
 
-.journey-title{
-  font-family: "DM Sans", sans-serif !important;
-  text-align: center !important;
-  font-weight: bolder !important;
-  color: var(--text-white) !important;
+.journey-title {
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  color: var(--text-white);
 }
 
 .journey-list {
-  color: var(--text-white) !important;
-  font-family: "DM Sans", sans-serif !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  flex-direction: row !important;
+  color: var(--text-white);
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .journey-items {
-  text-align: center !important;
+  text-align: center;
 }
 
 .border-right {
-  border-right: 1px solid black !important;
+  border-right: 1px solid black;
 }
 
 .third-section {
-  padding: 5% 10% !important;
-  background-color: var(--course-bg) !important;
+  padding: 5% 10%;
+  background-color: var(--course-bg);
 }
 
 .third-section-title {
-  text-align: center !important;
-  font-family: "DM Sans", sans-serif !important;
-  color: var(--text-white) !important;
-  margin-bottom: 4% !important;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  color: var(--text-white);
+  margin-bottom: 4%;
 }
 
 .third-section-title span {
-  color: var(--text-red) !important;
+  color: var(--text-red);
 }
 
 .card {
-  transition: box-shadow .6s;
-  margin: auto !important;
-  padding: 1.25rem !important;
-  border-radius: 0.5rem !important;
+  transition: box-shadow 0.6s;
+  margin: auto;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
   border: 0.1px solid var(--course-border);
-  border-width: 1px !important;
+  border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(53 58 60/var(--tw-border-opacity));
+  border-color: rgb(53 58 60 / var(--tw-border-opacity));
 }
 
 .card:hover {
-  box-shadow: 0 0 5px var(--card-shadow); 
+  box-shadow: 0 0 5px var(--card-shadow);
 }
 
 .course-thumbnail {
-  width: 100% !important;
-  border-radius: 5px !important;
+  width: 100%;
+  border-radius: 5px;
   margin-bottom: 1rem;
 }
 
@@ -235,29 +228,29 @@ a {
   padding: 0.15rem 0.7rem;
   border-radius: 99px;
   font-weight: 600;
-  color: var(--card-level-border) !important;
-  font-family: "DM Sans", sans-serif !important;
-  font-size: .7rem !important;
+  color: var(--card-level-border);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.7rem;
   border: 2px solid var(--card-level-border);
 }
 
 .course-title {
-  font-family: "DM Sans", sans-serif !important;
-  color: var(--text-white) !important;
+  font-family: "DM Sans", sans-serif;
+  color: var(--text-white);
   font-size: 1.7rem;
 }
 
 .line {
-  border-bottom: 1px solid var(--line-color) !important;
-  width: 70% !important;
-  opacity: .2;
+  border-bottom: 1px solid var(--line-color);
+  width: 70%;
+  opacity: 0.2;
 }
 
 .course-price-section {
   display: flex;
   flex-direction: row;
   color: var(--text-white);
-  font-family: "DM Sans", sans-serif !important;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -266,7 +259,6 @@ a {
   font-size: 1.3rem;
   color: var(--text-white);
 }
-
 
 .prev-price {
   margin-left: 15px;
@@ -283,253 +275,429 @@ a {
   margin-left: 15px;
 }
 
+.about-us {
+  text-align: center;}
+
+.instructor-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.instructor-title p {
+  font-size: 2.5rem;
+  color: var(--text-white);
+  margin: 0;
+  text-align: left;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+}
+
+.instructor-title p span {
+  color: var(--text-red);
+}
+
+.instructor-title a {
+  font-family: "DM Sans", sans-serif;
+}
+
+.button-61 {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.14) 0 2px 2px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 5px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  justify-content: center;
+  letter-spacing: 0.0892857em;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  will-change: transform, opacity;
+}
+
+.button-61:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 10px 0;
+}
+
+.button-61:disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 0, rgba(0, 0, 0, 0.14) 0 0 0 0,
+    rgba(0, 0, 0, 0.12) 0 0 0 0;
+  color: rgba(0, 0, 0, 0.37);
+  cursor: default;
+  pointer-events: none;
+}
+
+.button-61:not(:disabled) {
+  background-color: var(--know-more-btn);
+}
+
+.button-61:focus {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 10px 0;
+}
+
+.button-61:active {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px -3px,
+    rgba(0, 0, 0, 0.14) 0 8px 10px 1px, rgba(0, 0, 0, 0.12) 0 3px 14px 2px;
+  background: var(--know-more-btn-active);
+}
+
+.line-long {
+  width: 100%;
+  border-bottom: 1px solid var(--course-border);
+}
+
+.instructor-content {
+  padding: 4rem 0;
+}
+
+.image-div img {
+  width: 16rem;
+}
+
+.name-div {
+  margin-top: 2rem;
+}
+
+.name {
+  font-size: 1.875rem;
+  font-family: "DM Sans", sans-serif;
+  color: var(--text-white);
+  font-weight: 700;
+  line-height: 2.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.designation {
+  font-size: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  color: var(--text-yellowish);
+  font-weight: 500;
+  line-height: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.description-div {
+  border: 1px dashed var(--course-border);
+  padding: 20px;
+  border-radius: 15px;
+
+}
+
+.description {
+  font-size: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  color: var(--text-white);
+  font-weight: 200;
+  line-height: 2rem;
+  margin: 0;
+  text-align: justify;
+  padding: 0;
+}
+
+.description span {
+  color: var(--text-red);
+}
+
 @media only screen and (min-width: 769px) {
   /* For Desktop */
 
   .menu {
-    margin-right: 10% !important;
-    line-height: 100px !important;
+    margin-right: 10%;
+    line-height: 100px;
   }
 
   .logo {
-    margin: 0% 10% !important;
+    margin: 0% 10%;
   }
 
   .menu li a {
-    color: var(--navbar-text) !important;
+    color: var(--navbar-text);
   }
 
   .btn-design {
-    font-size: 16px !important;
-    padding: 8px 28px !important;
-    font-weight: 500 !important;
+    font-size: 16px;
+    padding: 8px 28px;
+    font-weight: 500;
   }
 
   .first-section {
-    text-align: left !important;
-    margin: 8% 10% !important;
-    display: flex !important;
-    flex-direction: row !important;
+    text-align: left;
+    margin: 8% 10%;
+    display: flex;
+    flex-direction: row;
   }
 
   .first-section h2 {
-    font-weight: 700 !important;
-    font-size: 54px !important;
+    font-weight: 700;
+    font-size: 54px;
   }
 
   .first-section h3 {
-    font-weight: 200 !important;
+    font-weight: 200;
     font-size: 22px;
-    margin: 0px 0px !important;
+    margin: 0px 0px 49px 0px;
   }
 
   .headerText {
-    width: 50% !important;
+    width: 50%;
   }
 
   .headerImage-div {
-    width: 50% !important;
-    margin: 0px 0px 0px 0px !important;
+    width: 50%;
+    margin: 0px 0px 0px 0px;
   }
 
   .headerImage {
-    width: 75% !important;
-    float: right !important;
+    width: 75%;
+    float: right;
   }
 
-  .first-section button {
-    font-size: 20px !important;
-    padding: 18px 36px !important;
-    font-weight: 600 !important;
+  .first-section a {
+    font-size: 20px;
+    padding: 18px 36px;
+    font-weight: 600;
   }
 
   .second-section {
-    padding: 3% 5% !important;
-    margin: 13% 20% !important;
+    padding: 3% 5%;
+    margin: 13% 20%;
   }
-  
-  .journey-title{
-    font-size: 38px !important;
+
+  .journey-title {
+    font-size: 38px;
   }
-  
+
   .journey-title p {
-    margin: 0px 0px 20px 0px !important;
-    padding: 0 !important;
+    margin: 0px 0px 20px 0px;
+    padding: 0;
   }
-  
+
   .journey-list {
-    margin: 0px 30px !important;
-    top: 0 !important;
+    margin: 0px 30px;
+    top: 0;
   }
-  
+
   .journey-items h4 {
-    font-size: 32px !important;
-    font-weight: 800 !important;
-    margin: 5px 0px !important;
-    padding: 0 !important;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 5px 0px;
+    padding: 0;
   }
-  
+
   .journey-items p {
-    font-weight: 500 !important;
-    font-size: 18px !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
   }
 
   .third-section-title {
-    font-size: 42px !important;
+    font-size: 42px;
   }
 
   .card {
-    max-width: 350px !important;
+    max-width: 350px;
   }
-  
+
+  .about-us {
+    padding: 3% 20%;
+  }
+
+  .button-61 {
+    font-size: 0.875rem;
+    padding: 0.75rem 1.75rem;
+  }
+
+  .image-div img {
+    width: 16rem;
+    height: 16rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   /* For Phone */
   .menu {
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 80% !important;
-    height: 100vh !important;
-    position: fixed !important;
-    top: 0px !important;
-    right: -100% !important;
-    z-index: 100 !important;
-    background-color: var(--menu-bg) !important;
-    transition: all 0.2s ease-in-out !important;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--menu-bg);
+    transition: all 0.2s ease-in-out;
   }
   .menu li {
-    margin-top: 40px !important;
+    margin-top: 40px;
   }
   .menu li a {
-    padding: 10px !important;
+    padding: 10px;
   }
 
   .btn-design {
-    font-size: 16px !important;
-    padding: 8px 28px !important;
-    font-weight: 500 !important;
+    font-size: 16px;
+    padding: 8px 28px;
+    font-weight: 500;
   }
 
   .open-menu,
   .close-menu {
-    display: block !important;
+    display: block;
   }
   #check:checked ~ .menu {
-    right: 0 !important;
+    right: 0;
   }
 
   .first-section {
-    padding: 30px 5px !important;
-    text-align: center !important;
-    margin: 20px 0px !important;
+    padding: 30px 5px;
+    text-align: center;
+    margin: 20px 0px;
   }
 
   .first-section h2 {
-    font-weight: 600 !important;
-    font-size: 38px !important;
+    font-weight: 600;
+    font-size: 38px;
   }
 
   .first-section h3 {
-    font-weight: normal !important;
-    margin: 0px 0px !important;
+    font-weight: normal;
+    margin: 0px 0px 38px 0px;
   }
 
   .headerImage {
-    width: 100% !important;
-    margin-top: 30px !important;
+    width: 100%;
+    margin-top: 30px;
   }
 
-  .first-section button {
-    font-size: 20px !important;
-    padding: 10px 25px !important;
-    font-weight: 600 !important;
+  .first-section a {
+    font-size: 20px;
+    padding: 10px 25px;
+    font-weight: 600;
   }
 
   .second-section {
-    padding: 40px 0px !important;
-    margin: 50px 0px !important;
+    padding: 40px 0px;
+    margin: 50px 0px;
   }
-  
-  .journey-title{
-    font-size: 26px !important;
+
+  .journey-title {
+    font-size: 26px;
   }
-  
+
   .journey-title p {
-    margin: 0px 0px 20px 0px !important;
-    padding: 0 !important;
+    margin: 0px 0px 20px 0px;
+    padding: 0;
   }
-  
+
   .journey-list {
-    margin: 0px 30px !important;
-    top: 0 !important;
+    margin: 0px 30px;
+    top: 0;
   }
-  
+
   .journey-items h4 {
-    font-size: 20px !important;
-    font-weight: 700 !important;
-    margin: 5px 0px !important;
-    padding: 0 !important;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0px;
+    padding: 0;
   }
-  
+
   .journey-items p {
-    font-weight: 400 !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
   }
 
   .third-section-title {
-    font-size: 24px !important;
+    font-size: 24px;
   }
-  
+
   .card {
-    width: 90% !important;
+    width: 90%;
   }
-  
+
+  .about-us {
+    padding: 15% 8%;
+  }
+
+  .instructor-title p {
+    font-size: 24px;
+  }
+
+  .button-61 {
+    font-size: 0.575rem;
+    line-height: 1.25rem;
+    inline-size: 100px;
+    padding: 0.5rem 1rem;
+  }
+
+  .image-div img {
+    width: 13rem;
+    height: 13rem;
+  }
 }
 
 @keyframes animate {
-  from{
+  from {
     bottom: 0;
   }
-  to{
+  to {
     bottom: 20px;
   }
 }
 
 :root {
-  --main-bg: #141517 !important;
-  --menu-bg: #ff2e63 !important;
-  --section1-h2: #ffffff !important;
-  --section1-h3: #ffffff !important;
-  --navbar-text: #ffffff !important;
+  --main-bg: #141517;
+  --menu-bg: #ff2e63;
+  --section1-h2: #ffffff;
+  --section1-h3: #ffffff;
+  --navbar-text: #ffffff;
 
-  --gra-up: rgb(190, 32, 72, 1) !important;
-  --gra-down: rgba(255, 46, 99, 1) !important;
-  --drop-shadow: #cb1744 !important;
+  --gra-up: rgb(190, 32, 72, 1);
+  --gra-down: rgba(255, 46, 99, 1);
+  --drop-shadow: #cb1744;
 
-
-  --text-white: #eaeaea !important;
-  --text-red: rgba(255, 46, 99, 1) !important;
-
+  --text-white: #eaeaea;
+  --text-red: rgba(255, 46, 99, 1);
+  --text-yellowish: #fc9e9e;
 
   /* Card */
-  --line-color: #bfbfbf !important;
-  --course-bg: rgb(27 29 30) !important;
-  --course-border: #939393 !important;
-  --dicount-bg: rgb(29 209 161) !important;
-  --card-shadow: rgba(255, 46, 99, 1) !important;
-  --card-level-border: #09c533 !important;
+  --line-color: #bfbfbf;
+  --course-bg: rgb(27 29 30);
+  --course-border: rgb(119 124 133);
+  --dicount-bg: rgb(29 209 161);
+  --card-shadow: rgba(255, 46, 99, 1);
+  --card-level-border: #09c533;
 
+  --know-more-btn: rgba(255, 46, 99, 1);
+  --know-more-btn-active: rgb(212, 39, 82);
 
-
-
-
-  --black: #252a34 !important;
-  --light-green: #08d9d6 !important;
-  --pink: rgb(190, 32, 72) !important;
-  --light-white: #eaeaea !important;
-  --dark-blue: #1e0738 !important;
+  --black: #252a34;
+  --light-green: #08d9d6;
+  --pink: rgb(190, 32, 72);
+  --light-white: #eaeaea;
+  --dark-blue: #1e0738;
 }
