@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 * {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--main-bg);
+  background-color: var(--dark-bg);
   margin: 0;
   padding: 0;
 }
@@ -14,13 +16,53 @@ a {
   text-decoration: none;
 }
 
+.font-sans {
+  font-family: "DM Sans", sans-serif;
+}
+
+.font-poppin {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-white {
+  color: var(--text-white);
+}
+
+.text-yellowish {
+  color: var(--text-yellowish);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-dark {
+  background-color: var(--main-bg);
+}
+
+.bg-dark-light {
+  background-color: var(--dark-light-bg);
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   position: relative;
-  color: var(--navbar-text);
   padding: 12px 20px;
 }
 
@@ -36,9 +78,6 @@ a {
 .menu li a {
   display: inline-block;
   text-decoration: none;
-  color: var(--black);
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
   transition: 0.15s ease-in-out;
   position: relative;
 }
@@ -59,7 +98,6 @@ a {
 .open-menu,
 .close-menu {
   position: absolute;
-  color: var(--light-white);
   cursor: pointer;
   font-size: 1.5rem;
   display: none;
@@ -77,14 +115,6 @@ a {
   display: none;
 }
 
-.first-section h2 {
-  color: var(--section1-h2);
-}
-
-.first-section {
-  font-family: "DM Sans", sans-serif;
-}
-
 .first-section h2 span {
   background: -webkit-linear-gradient(
     90deg,
@@ -94,10 +124,6 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   max-width: max-content;
-}
-
-.first-section h3 {
-  color: var(--section1-h3);
 }
 
 .first-section a {
@@ -110,9 +136,8 @@ a {
   border-radius: 99px;
   box-shadow: var(--gra-down) 0 5px 30px -5px;
   box-sizing: border-box;
-  color: #ffffff;
   cursor: pointer;
-  font-family: "DM Sans", sans-serif;
+  
   margin-top: 25px;
   line-height: 24px;
   opacity: 1;
@@ -133,7 +158,6 @@ a {
 .second-section {
   background: rgb(190, 32, 72);
   background: linear-gradient(90deg, var(--gra-up), var(--gra-down));
-  box-shadow: var(--drop-shadow) 10px 10px 0px -2px;
   box-sizing: border-box;
   position: relative;
   border-radius: 1.2rem;
@@ -149,9 +173,8 @@ a {
   border-radius: 99px;
   box-shadow: var(--gra-down) 0 5px 30px -5px;
   box-sizing: border-box;
-  color: #ffffff;
   cursor: pointer;
-  font-family: "DM Sans", sans-serif;
+  
   line-height: 24px;
   opacity: 1;
   outline: 0 solid transparent;
@@ -163,23 +186,11 @@ a {
   border: 0;
 }
 
-.journey-title {
-  font-family: "DM Sans", sans-serif;
-  text-align: center;
-  font-weight: bolder;
-  color: var(--text-white);
-}
-
 .journey-list {
-  color: var(--text-white);
-  font-family: "DM Sans", sans-serif;
+  
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-}
-
-.journey-items {
-  text-align: center;
 }
 
 .border-right {
@@ -188,13 +199,9 @@ a {
 
 .third-section {
   padding: 5% 10%;
-  background-color: var(--course-bg);
 }
 
 .third-section-title {
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
-  color: var(--text-white);
   margin-bottom: 4%;
 }
 
@@ -227,16 +234,14 @@ a {
   display: inline;
   padding: 0.15rem 0.7rem;
   border-radius: 99px;
-  font-weight: 600;
   color: var(--card-level-border);
-  font-family: "DM Sans", sans-serif;
+  
   font-size: 0.7rem;
   border: 2px solid var(--card-level-border);
 }
 
 .course-title {
-  font-family: "DM Sans", sans-serif;
-  color: var(--text-white);
+  
   font-size: 1.7rem;
 }
 
@@ -249,15 +254,11 @@ a {
 .course-price-section {
   display: flex;
   flex-direction: row;
-  color: var(--text-white);
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
 }
 
 .final-price {
   margin-left: 5px;
   font-size: 1.3rem;
-  color: var(--text-white);
 }
 
 .prev-price {
@@ -275,9 +276,6 @@ a {
   margin-left: 15px;
 }
 
-.about-us {
-  text-align: center;}
-
 .instructor-title {
   display: flex;
   flex-direction: row;
@@ -288,20 +286,15 @@ a {
 
 .instructor-title p {
   font-size: 2.5rem;
-  color: var(--text-white);
   margin: 0;
   text-align: left;
-  font-weight: 700;
-  font-family: "DM Sans", sans-serif;
+  
 }
 
 .instructor-title p span {
   color: var(--text-red);
 }
 
-.instructor-title a {
-  font-family: "DM Sans", sans-serif;
-}
 
 .button-61 {
   align-items: center;
@@ -311,18 +304,15 @@ a {
   box-shadow: rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.14) 0 2px 2px 0,
     rgba(0, 0, 0, 0.12) 0 1px 5px 0;
   box-sizing: border-box;
-  color: #fff;
   cursor: pointer;
   display: inline-flex;
   font-family: Roboto, sans-serif;
-  font-weight: 500;
   justify-content: center;
   letter-spacing: 0.0892857em;
   min-width: 64px;
   outline: none;
   overflow: visible;
   position: relative;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -381,9 +371,7 @@ a {
 
 .name {
   font-size: 1.875rem;
-  font-family: "DM Sans", sans-serif;
-  color: var(--text-white);
-  font-weight: 700;
+  
   line-height: 2.25rem;
   margin: 0;
   padding: 0;
@@ -391,9 +379,6 @@ a {
 
 .designation {
   font-size: 1.5rem;
-  font-family: "DM Sans", sans-serif;
-  color: var(--text-yellowish);
-  font-weight: 500;
   line-height: 2rem;
   margin: 0;
   padding: 0;
@@ -408,8 +393,7 @@ a {
 
 .description {
   font-size: 1.5rem;
-  font-family: "DM Sans", sans-serif;
-  color: var(--text-white);
+  
   font-weight: 200;
   line-height: 2rem;
   margin: 0;
@@ -421,8 +405,55 @@ a {
   color: var(--text-red);
 }
 
+
+.social-title {
+  margin: 0;
+}
+
+.social-desc {
+  font-weight: 500;
+}
+
+.social-card-section {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  gap: 3rem;
+  display: grid;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.social-card {
+  gap: 1rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.social-icon img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.text-link {
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
 @media only screen and (min-width: 769px) {
   /* For Desktop */
+
+  .title {
+    font-size: 42px;
+  }
 
   .menu {
     margin-right: 10%;
@@ -433,14 +464,9 @@ a {
     margin: 0% 10%;
   }
 
-  .menu li a {
-    color: var(--navbar-text);
-  }
-
   .btn-design {
     font-size: 16px;
     padding: 8px 28px;
-    font-weight: 500;
   }
 
   .first-section {
@@ -451,7 +477,6 @@ a {
   }
 
   .first-section h2 {
-    font-weight: 700;
     font-size: 54px;
   }
 
@@ -478,10 +503,10 @@ a {
   .first-section a {
     font-size: 20px;
     padding: 18px 36px;
-    font-weight: 600;
   }
 
   .second-section {
+    box-shadow: var(--drop-shadow) 10px 10px 0px -2px;
     padding: 3% 5%;
     margin: 13% 20%;
   }
@@ -502,20 +527,14 @@ a {
 
   .journey-items h4 {
     font-size: 32px;
-    font-weight: 800;
     margin: 5px 0px;
     padding: 0;
   }
 
   .journey-items p {
-    font-weight: 500;
     font-size: 18px;
     margin: 0;
     padding: 0;
-  }
-
-  .third-section-title {
-    font-size: 42px;
   }
 
   .card {
@@ -535,10 +554,27 @@ a {
     width: 16rem;
     height: 16rem;
   }
+
+  .social-section {
+    padding: 5% 20%;
+  }
+
+  .social-card-section {
+    grid-template-columns: repeat(4,minmax(0,1fr));
+  }
+
+  .social-desc {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   /* For Phone */
+
+  .title {
+    font-size: 40px;
+  }
+
   .menu {
     flex-direction: column;
     align-items: center;
@@ -561,7 +597,6 @@ a {
   .btn-design {
     font-size: 16px;
     padding: 8px 28px;
-    font-weight: 500;
   }
 
   .open-menu,
@@ -579,7 +614,6 @@ a {
   }
 
   .first-section h2 {
-    font-weight: 600;
     font-size: 38px;
   }
 
@@ -590,13 +624,12 @@ a {
 
   .headerImage {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 60px;
   }
 
   .first-section a {
     font-size: 20px;
     padding: 10px 25px;
-    font-weight: 600;
   }
 
   .second-section {
@@ -620,7 +653,6 @@ a {
 
   .journey-items h4 {
     font-size: 20px;
-    font-weight: 700;
     margin: 5px 0px;
     padding: 0;
   }
@@ -629,10 +661,6 @@ a {
     font-weight: 400;
     margin: 0;
     padding: 0;
-  }
-
-  .third-section-title {
-    font-size: 24px;
   }
 
   .card {
@@ -658,6 +686,18 @@ a {
     width: 13rem;
     height: 13rem;
   }
+
+  .social-section {
+    padding: 20% 10%;
+  }
+
+  .social-card-section {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .social-desc {
+    font-size: 0.8rem;
+  }
 }
 
 @keyframes animate {
@@ -670,11 +710,9 @@ a {
 }
 
 :root {
-  --main-bg: #141517;
+  --dark-bg: #141517;
+  --dark-light-bg: rgb(27 29 30);
   --menu-bg: #ff2e63;
-  --section1-h2: #ffffff;
-  --section1-h3: #ffffff;
-  --navbar-text: #ffffff;
 
   --gra-up: rgb(190, 32, 72, 1);
   --gra-down: rgba(255, 46, 99, 1);
@@ -682,7 +720,7 @@ a {
 
   --text-white: #eaeaea;
   --text-red: rgba(255, 46, 99, 1);
-  --text-yellowish: #fc9e9e;
+  --text-yellowish: #fac0b6;
 
   /* Card */
   --line-color: #bfbfbf;
