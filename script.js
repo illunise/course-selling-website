@@ -12,16 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
       body.classList.add("dark");
       body.classList.remove("light");
       gitLogo.src = "images/github-dark.png";
-      footerLogo.src = "/images/logo.png";
-      topLogo.src = "/images/logo.png";
+      footerLogo.src = "images/logo.png";
+      topLogo.src = "images/logo.png";
       console.log("Dark Mode Active");
     } else {
       console.log("Light Mode Active");
       body.classList.remove("dark");
       body.classList.add("light");
       gitLogo.src = "images/github-light.png";
-      footerLogo.src = "/images/logo_dark.png";
-      topLogo.src = "/images/logo_dark.png";
+      footerLogo.src = "images/logo_dark.png";
+      topLogo.src = "images/logo_dark.png";
     }
   });
 });
