@@ -75,8 +75,10 @@ a {
 }
 
 nav {
-  background-color: var(--primary-bg);
+  background-color: transparent;
+  backdrop-filter: blur(10px);
   z-index: 999;
+  box-shadow: var(--navbar-shadow) 0px 5px 15px 0px;
 }
 
 .logo img {
@@ -990,7 +992,7 @@ p.morning {
   }
 
   .menu {
-    line-height: 100px;
+    line-height: 80px;
   }
 
   .nav-bar {
@@ -1310,6 +1312,7 @@ p.morning {
   --blog: #FF2E63;
   --blog-secondary: #ca244d;
   --acsent-color: rgb(136, 136, 136);
+  --navbar-shadow: rgba(0, 0, 0, 0.25);
 }
 
 :root .dark {
@@ -1320,4 +1323,5 @@ p.morning {
   --blog: #FF2E63;
   --blog-secondary: #ca244d;
   --acsent-color: rgb(189, 189, 189);
+  --navbar-shadow: rgba(255, 255, 255, 0.25);
 }
