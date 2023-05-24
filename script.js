@@ -29,16 +29,16 @@ hide_checkbox.addEventListener("click", () => {
   if (checkbox.checked) {
     body.classList.add("dark");
     body.classList.remove("light");
-    gitLogo.src = "images/github-dark.png";
-    footerLogo.src = "images/logo.png";
-    topLogo.src = "images/logo.png";
+    gitLogo.src = "images/github-dark.webp";
+    footerLogo.src = "images/logo.webp";
+    topLogo.src = "images/logo.webp";
     console.log("Dark Mode Active");
   } else {
     console.log("Light Mode Active");
     body.classList.remove("dark");
     body.classList.add("light");
-    gitLogo.src = "images/github-light.png";
-    footerLogo.src = "images/logo_dark.png";
-    topLogo.src = "images/logo_dark.png";
+    gitLogo.src = "images/github-light.webp";
+    footerLogo.src = "images/logo_dark.webp";
+    topLogo.src = "images/logo_dark.webp";
   }
 });

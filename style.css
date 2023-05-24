@@ -1312,7 +1312,7 @@ p.morning {
   --blog: #FF2E63;
   --blog-secondary: #ca244d;
   --acsent-color: rgb(136, 136, 136);
-  --navbar-shadow: rgba(0, 0, 0, 0.25);
+  --navbar-shadow: rgba(0, 0, 0, 0.17);
 }
 
 :root .dark {
@@ -1323,5 +1323,5 @@ p.morning {
   --blog: #FF2E63;
   --blog-secondary: #ca244d;
   --acsent-color: rgb(189, 189, 189);
-  --navbar-shadow: rgba(255, 255, 255, 0.25);
+  --navbar-shadow: rgba(255, 255, 255, 0.17);
 }
