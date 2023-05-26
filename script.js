@@ -32,9 +32,7 @@ hide_checkbox.addEventListener("click", () => {
     gitLogo.src = "images/github-dark.webp";
     footerLogo.src = "images/logo.webp";
     topLogo.src = "images/logo.webp";
-    console.log("Dark Mode Active");
   } else {
-    console.log("Light Mode Active");
     body.classList.remove("dark");
     body.classList.add("light");
     gitLogo.src = "images/github-light.webp";
