@@ -9,12 +9,12 @@ hide_checkbox.addEventListener("click", () => {
   if (checkbox.checked) {
     body.classList.add("dark");
     body.classList.remove("light");
-    footerLogo.src = "/images/logo.webp";
-    topLogo.src = "/images/logo.webp";
+    footerLogo.src = "../../images/logo.webp";
+    topLogo.src = "../../images/logo.webp";
   } else {
     body.classList.remove("dark");
     body.classList.add("light");
-    footerLogo.src = "/images/logo_dark.webp";
-    topLogo.src = "/images/logo_dark.webp";
+    footerLogo.src = "../../images/logo_dark.webp";
+    topLogo.src = "../../images/logo_dark.webp";
   }
 });
