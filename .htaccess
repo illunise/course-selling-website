@@ -1,6 +1,0 @@
-# Set cache control headers for static resources
-<IfModule mod_headers.c>
-  <FilesMatch "\.(jpg|jpeg|png|gif|ico|css|js)$">
-    Header set Cache-Control "public, max-age=31536000"
-  </FilesMatch>
-</IfModule>
