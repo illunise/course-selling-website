@@ -1,0 +1,22 @@
+:root .light {
+  --primary-bg: #ffffff;
+  --secondary-bg: #f5f5f5;
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --blog: #ff2e63;
+  --blog-secondary: #ca244d;
+  --acsent-color: rgb(136, 136, 136);
+  --navbar-shadow: rgba(0, 0, 0, 0.17);
+  --navbar-shadow-invert: rgba(0, 0, 0, 0.17);
+}
+
+:root .dark {
+  --primary-bg: #131516;
+  --secondary-bg: #1b1d1e;
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --blog: #ff2e63;
+  --blog-secondary: #ca244d;
+  --acsent-color: rgb(189, 189, 189);
+  --navbar-shadow: rgba(255, 255, 255, 0.17);
+}

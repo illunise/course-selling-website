@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../../images/login_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Rubik", sans-serif;
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-box {
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px 0 rgba(31, 38, 135, 0.12);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.logo {
+  width: 300px;
+  margin-bottom: 48px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2rem;
+}
+
+.login-section {
+  height: 100vh;
+}
+
+.login-title {
+  text-align: left;
+  font-size: 28px;
+  color: white;
+}
+
+.login-subtitle {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+}
+
+label {
+  color: #E0E0E0;
+  margin-bottom: .2rem;
+}
+
+input {
+  /* line-height: 1.7rem; */
+  padding: .8rem;
+  border-radius: 7px;
+  border: none;
+}
+
+#username {
+  margin-bottom: .7rem;
+}
+
+#submit {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  color: white;
+  background-color: var(--blog);
+  transition-duration: .6s;
+}
+
+#submit:hover {
+  background-color: var(--blog-secondary);
+  transform: scale(1.01);
+}
+
+.forget {
+  font-size: 16px;
+  margin-top: .3rem;
+  margin-left: .3rem;
+  color: #E0E0E0;
+}
+
+.forget:hover {
+  color: black;
+  transition-duration: .4s;
+}
+
+@media only screen and (max-width: 900px) {
+  /* For Phone */
+}
