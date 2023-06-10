@@ -1,0 +1,294 @@
+.contact-form-section {
+    transform: translateY(-80px);
+  }
+  
+  .contact-section {
+    position: relative;
+    margin-top: 70px;
+  }
+  
+  .contact-bg {
+    background-color: rgb(0, 0, 0, 1);
+  }
+  
+  .image {
+    background-image: url(../../images/contact_bg.jpg);
+    height: 60vh;
+    opacity: 0.4;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .contact-bg h1 {
+    z-index: 999;
+    color: var(--primary-color);
+    margin: auto;
+  }
+  
+  .contact-title {
+    position: absolute;
+    top: 0;
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+  }
+  
+  .form-title {
+    margin-bottom: 3.5rem;
+  }
+  
+  .contact-title h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+  
+  .contact-title p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .contact-form-section {
+    width: 80%;
+    max-width: 1300px;
+    margin: auto;
+  }
+  
+  .first-contact-section {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form {
+    background-color: var(--secondary-bg);
+    color: var(--primary-color);
+    padding: 3rem 2.5rem;
+    font-family: "Rubik", sans-serif;
+    box-shadow: rgb(0, 0, 0, 0.1) 0px 0px 5px 0px,
+      rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  }
+  
+  .send-title {
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .input-container label {
+    position: absolute;
+    top: -13px;
+    left: 0px;
+    font-size: 12px;
+    color: var(--acsent-color);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .input-container input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: var(--primary-color);
+  }
+  
+  .submit-btn {
+    margin-top: 2rem;
+  }
+  
+  .submit-btn a {
+    color: #fff;
+    background: var(--blog);
+    float: right;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+  }
+  
+  .submit-btn a:hover {
+    background-color: var(--blog-secondary);
+  }
+  
+  .social-contact {
+    background-color: var(--blog);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 2rem;
+    font-family: "Rubik", sans-serif;
+  }
+  
+  .social-contact p {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  .mail-content {
+    place-content: center;
+    place-self: center;
+    display: grid;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .mail-content a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  
+  .mail-logo {
+    place-content: center;
+    border-radius: 0.5rem;
+    width: 52px;
+    height: 52px;
+    font-size: 1.5rem;
+    display: grid;
+    background-color: rgb(0, 0, 0, 0.2);
+  }
+  
+  .mail-logo svg {
+    place-content: center;
+    text-align: center;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    font-size: 1.875rem;
+    gap: 1.25rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .icons a {
+    color: #fff;
+  }
+  
+  @media only screen and (min-width: 900px) {
+    /* For Desktop */
+  
+    .contact-form-section {
+      display: flex;
+    }
+  
+    .contact-form {
+      width: 70%;
+    }
+  
+    .contact-title {
+      display: flex;
+      height: 100%;
+      margin-left: 15%;
+      align-items: center;
+    }
+  
+    .form-title {
+      font-size: 2.25rem;
+    }
+  
+    .form-title {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+  
+    .first-contact-section {
+      gap: 2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .submit-btn a {
+      color: #fff;
+      border-radius: 5px;
+      padding: 1rem 2rem;
+      background: var(--blog);
+      float: right;
+      font-size: 1.25rem;
+      vertical-align: middle;
+      display: flex;
+      align-items: center;
+      transition: all 0.4s ease;
+    }
+  
+    .submit-btn a:hover {
+      background-color: var(--blog-secondary);
+    }
+  
+    .submit-btn a svg {
+      margin-left: 0.6rem;
+    }
+  
+    .social-contact {
+      width: 30%;
+      background-color: var(--blog);
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .contact-form-section {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .contact-title {
+      text-align: center;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .form-title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .first-contact-section {
+      gap: 2rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .submit-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .submit-btn a {
+      color: #fff;
+      border-radius: 5px;
+      padding: 1rem 2rem;
+      background: var(--blog);
+      float: right;
+      font-size: 1.25rem;
+      vertical-align: middle;
+      display: flex;
+      align-items: center;
+      transition: all 0.4s ease;
+    }
+  
+    .submit-btn a:hover {
+      background-color: var(--blog-secondary);
+    }
+  
+    .submit-btn a svg {
+      margin-left: 0.6rem;
+    }
+  
+    .social-contact {
+      padding: 2rem 1.25rem;
+      height: 440px;
+    }
+  }
+  

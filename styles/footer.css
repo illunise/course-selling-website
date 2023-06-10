@@ -1,0 +1,143 @@
+.super-container {
+  align-items: center;
+  background: var(--dark-light-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.super-container {
+  background-color: var(--secondary-bg);
+}
+
+.components-outer-container {
+  margin: auto;
+  max-width: 1500px;
+}
+
+.footer-container {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
+.footer-container .first {
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  line-height: 28px;
+  padding: 2rem;
+  width: 36%;
+}
+
+.footer-container img {
+  height: 40px;
+}
+
+.footer-container .first .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-container .second {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 2rem;
+  padding: 2rem;
+  width: 30%;
+}
+
+.footer-container a {
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.footer-container .third {
+  color: var(--);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  width: 30%;
+}
+
+.footer-container .third .top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-container .third p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer-container .third .top .social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-container .third .top .social-icons a {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.footer-container .third .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-container .third p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer-container a {
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .footer-container .first {
+    margin: 0;
+    width: 90%;
+  }
+
+  .footer-container .first {
+    width: 80%;
+  }
+
+  .footer-container img {
+    width: 250px;
+    height: auto;
+  }
+
+  .copyright {
+    margin: 0;
+  }
+
+  .footer-container .second,
+  .footer-container .third {
+    align-items: flex-start;
+    margin: 0;
+    width: 90%;
+  }
+}
