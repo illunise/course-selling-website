@@ -14,19 +14,19 @@ This repository contains the source code for a course selling website, a compreh
 
 ## Screenshots 📷
 
-![Course Main Page](screenshots/1.png)
+![Course Main Page](https://i.postimg.cc/VNQCBFYP/1.png)
 *Course Main Page - Home Section of the Main Page.*
 
-![Courses](screenshots/2.png)
+![Courses](https://i.postimg.cc/2SBWZtNx/2.png)
 *Courses - List of courses provided by the website.*
 
-![Course Details](screenshots/3.png)
+![Course Details](https://i.postimg.cc/63KCwfSf/3.png)
 *Course Details - Get detailed information about each course, including advantages, duration, and many more.*
 
-![Instructor](screenshots/4.png)
+![Instructor](https://i.postimg.cc/sDx7VXnq/4.png)
 *Instructor - Details about the instructor who is teaching the course.*
 
-![Social Media](screenshots/5.png)
+![Social Media](https://i.postimg.cc/kMfW38yW/5.png)
 *Social Media - Links to the social media community.*
 
 
